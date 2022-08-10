@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Input.gd" type="Script" id=1]
+[ext_resource path="res://ChatMessages.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.2, 0.2, 0.2, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="MainWindow" type="Panel" parent="MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 712.0
+margin_bottom = 376.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="ChatMargin" type="MarginContainer" parent="MarginContainer/MainWindow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 16
+custom_constants/margin_top = 16
+custom_constants/margin_left = 16
+custom_constants/margin_bottom = 16
+
+[node name="ChatContainer" type="VBoxContainer" parent="MarginContainer/MainWindow/ChatMargin"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 688.0
+margin_bottom = 352.0
+
+[node name="ChatScroll" type="ScrollContainer" parent="MarginContainer/MainWindow/ChatMargin/ChatContainer"]
+margin_right = 672.0
+margin_bottom = 308.0
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="Chat" type="VBoxContainer" parent="MarginContainer/MainWindow/ChatMargin/ChatContainer/ChatScroll"]
+margin_right = 672.0
+size_flags_horizontal = 3
+script = ExtResource( 2 )
+
+[node name="InputContainer" type="VBoxContainer" parent="MarginContainer/MainWindow/ChatMargin/ChatContainer"]
+margin_top = 312.0
+margin_right = 672.0
+margin_bottom = 336.0
+
+[node name="Input" type="LineEdit" parent="MarginContainer/MainWindow/ChatMargin/ChatContainer/InputContainer"]
+margin_right = 672.0
+margin_bottom = 24.0
+script = ExtResource( 1 )

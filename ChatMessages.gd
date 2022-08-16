@@ -21,5 +21,4 @@ func _on_chat_message(msg:Dictionary):
 func _on_chat_clear():
 	for child in get_children():
 		child.queue_free()
-	
 	print("Cleared!")

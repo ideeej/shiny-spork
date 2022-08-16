@@ -10,12 +10,13 @@ config_version=4
 
 [application]
 
-config/name="mafia-like"
-run/main_scene="res://Main.tscn"
+config/name="Koinonia"
+run/main_scene="res://Scenes/Chat.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
+Firebase="*res://Singletons/Firebase.gd"
 NetworkManager="*res://Singletons/NetworkManager.gd"
 Chat="*res://Singletons/Chat.gd"
 

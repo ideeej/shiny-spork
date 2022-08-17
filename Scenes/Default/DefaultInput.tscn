@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Font data/Sintony-Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=12]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="StyleBoxFlat" id=11]
+content_margin_left = 8.0
+content_margin_right = 8.0
+content_margin_top = 6.0
+content_margin_bottom = 6.0
+bg_color = Color( 0, 0.305, 0.61, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="LineEdit" type="LineEdit"]
+margin_top = 21.0
+margin_right = 462.0
+margin_bottom = 49.0
+grow_horizontal = 0
+rect_min_size = Vector2( 332, 0 )
+size_flags_horizontal = 11
+custom_colors/selection_color = Color( 0.69, 0.69, 0.69, 0.498039 )
+custom_colors/cursor_color = Color( 1, 1, 1, 1 )
+custom_colors/clear_button_color_pressed = Color( 1, 1, 1, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/clear_button_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_uneditable = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 12 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+max_length = 48
+secret = true
+expand_to_text_length = true
+placeholder_text = "Confirme sua senha"
+placeholder_alpha = 0.8

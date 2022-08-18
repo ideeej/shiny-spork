@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Default/Input/Style/Focus.tres" type="StyleBox" id=1]
+[ext_resource path="res://Scenes/Default/Input/Style/Readonly.tres" type="StyleBox" id=2]
+[ext_resource path="res://Scenes/Default/Input/Style/Normal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Fonts/RetroGaming.tres" type="DynamicFont" id=4]
+
+[node name="DefaultInput" type="LineEdit"]
+margin_right = 590.0
+margin_bottom = 86.0
+grow_horizontal = 2
+rect_min_size = Vector2( 256, 0 )
+custom_colors/selection_color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+custom_colors/cursor_color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+custom_colors/font_color_selected = Color( 0.933333, 0.933333, 0.933333, 1 )
+custom_colors/font_color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+custom_colors/font_color_uneditable = Color( 0.498039, 0.498039, 0.498039, 1 )
+custom_fonts/font = ExtResource( 4 )
+custom_styles/read_only = ExtResource( 2 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 3 )
+expand_to_text_length = true
+placeholder_text = "digite..."
+caret_blink = true

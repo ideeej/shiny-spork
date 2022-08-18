@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "PopupTweener",
+"language": "GDScript",
+"path": "res://Scenes/Scripts/Popup/PopupTween.gd"
+} ]
+_global_script_class_icons={
+"PopupTweener": ""
+}
+
 [application]
 
 config/name="Koinonia"
@@ -22,8 +32,8 @@ Chat="*res://Singletons/Chat.gd"
 
 [display]
 
-window/size/width=720
-window/size/height=384
+window/size/width=1980
+window/size/height=1080
 window/stretch/mode="2d"
 window/stretch/aspect="keep_width"
 

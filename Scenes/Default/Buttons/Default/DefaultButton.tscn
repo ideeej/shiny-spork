@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Default/Buttons/Default/Style/pressed.tres" type="StyleBox" id=1]
+[ext_resource path="res://Scenes/Default/Buttons/Default/Font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scenes/Default/Buttons/Default/Style/hover.tres" type="StyleBox" id=3]
+[ext_resource path="res://Scenes/Default/Buttons/Default/Style/focus.tres" type="StyleBox" id=4]
+[ext_resource path="res://Scenes/Default/Buttons/Default/Style/disabled.tres" type="StyleBox" id=5]
+[ext_resource path="res://Scenes/Default/Buttons/Default/Style/normal.tres" type="StyleBox" id=6]
+
+[node name="DefaultButton" type="Button"]
+margin_right = 138.0
+margin_bottom = 58.0
+custom_colors/font_color_disabled = Color( 0.466667, 0.466667, 0.466667, 1 )
+custom_colors/font_color_focus = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+custom_colors/font_color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+custom_colors/font_color_hover = Color( 0.933333, 0.933333, 0.933333, 1 )
+custom_colors/font_color_pressed = Color( 0.933333, 0.933333, 0.933333, 1 )
+custom_fonts/font = ExtResource( 2 )
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 5 )
+custom_styles/normal = ExtResource( 6 )
